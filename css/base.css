@@ -114,13 +114,10 @@ th a {
 
 .sticky + #logo {
   display: block;
-  -webkit-transition: width 0.08s;
-  /* Safari prior 6.1 */
-  transition: width 0.08s;
   width: 66px;
   margin-top: 35px;
   left: 50%;
-  margin-left: -33px;
+  margin-left: -36px;
 }
 
 h1 {
