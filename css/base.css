@@ -1,0 +1,172 @@
+:root {
+    --primary-color: #eaeaea;
+    --secondary-color:#343330;
+    --accent-one:#2f916d;
+    --accent-two: #ffd454;
+    --body-text-color:#000;
+    --header-text-color:#FFF;
+
+    --header-font: Gadget, 'Arial Black', sans-serif;
+    --accent-font: 'Lucida Console', Monaco, monospace;
+    --body-font: 'Trebuchet MS', Helvetica, sans-serif;
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--body-font);
+  font-size: 14px;
+  background-color: var(--primary-color);
+  color: var(--body-text-color);
+}
+
+table, th, td {
+  padding: 0px;
+  margin: 0px;
+}
+
+th a {
+  font-size: 1.5em;
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 0px 15px;
+}
+
+#nav {
+  width: 100%;
+  margin-top: 25px;
+  padding-top: 15px;
+}
+
+#leftLinks {
+  text-align: right;
+}
+
+#rightLinks {
+  text-align: left;
+}
+
+#middle {
+  width: 30%;
+}
+
+#navBottom {
+  width: 100%;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  font-size: 4em;
+  margin-top: -7px;
+  text-align: center;
+}
+
+#logo {
+  display: block;
+  width: 8em;
+  margin-top: -120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+
+.sticky {
+  position: fixed;
+  top: -40px;
+  padding: 5px;
+  margin-top: 0px;
+  width: 100%;
+  z-index: 10;
+}
+
+.sticky + #navBottom {
+  -webkit-transition: top 0.2s;
+  /* Safari prior 6.1 */
+  transition: top 0.2s;
+  top: -25px;
+  z-index: 0;
+}
+
+.sticky th {
+  padding: 15px 0px 0px 0px;
+}
+
+.sticky a {
+  -webkit-transition: color 0.2s;
+  /* Safari prior 6.1 */
+  transition: color 0.2s;
+  color: var(--header-text-color);
+}
+
+.sticky h1 {
+  -webkit-transition: margin-top 0.2s;
+  /* Safari prior 6.1 */
+  -webkit-transition: line-height 0.2s;
+  /* Safari prior 6.1 */
+  transition: margin-top 0.2s;
+  transition: line-height 0.2s;
+  margin-top: 0;
+  line-height: 25px;
+  float: none;
+}
+
+.sticky + #logo {
+  display: block;
+  -webkit-transition: width 0.08s;
+  /* Safari prior 6.1 */
+  transition: width 0.08s;
+  width: 66px;
+  margin-top: 35px;
+  left: 50%;
+  margin-left: -33px;
+}
+
+h1 {
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  color: var(--header-text-color);
+  background-color: var(--secondary-color);
+}
+
+h2 {
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  color: var(--accent-one);
+}
+
+h3 {
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+p {
+  background-color: #fff;
+  margin: 15px 0;
+  color: var(--accent-color);
+}
+
+button {
+  font-size: 13px;
+  padding: 8px 12px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0.8;
+  outline: 0;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.center {
+  text-align: center;
+}
