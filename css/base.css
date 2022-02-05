@@ -167,3 +167,7 @@ button:hover {
 .center {
   text-align: center;
 }
+
+#hideTheChaos {
+    visibility: hidden;
+}
