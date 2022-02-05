@@ -169,5 +169,5 @@ button:hover {
 }
 
 #hideTheChaos {
-    visibility: hidden;
+    display:none;
 }
